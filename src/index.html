@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="shopping.css">
+    <script src="main.js" defer></script>
+    <title>online shopping mall</title>
+</head>
+<body>
+    <!-- logo -->
+    <div class="header">
+        <img src="img/logo.png" alt="logo" class="logo" onclick="itemsShow();">
+    </div>
+    <!-- buttons -->
+    <section class="middle">
+        <button class="btn" onclick="itemsShow();"><img class="btnImg" src="img/blue_t.png" data-key="type" data-value="tshirt" ></button>
+        <button class="btn" onclick="itemsShow();"><img class="btnImg" src="img/yellow_p.png" data-key="type" data-value="pants" ></button>
+        <button class="btn" onclick="itemsShow();"><img class="btnImg" src="img/pink_s.png" data-key="type" data-value="skirt" ></button>
+        <button class="btn colorBtn blue" data-key="color" data-value="blue" onclick="itemsShow();">Blue</button>
+        <button class="btn colorBtn yellow" data-key="color" data-value="yellow" onclick="itemsShow();">Yellow</button>
+        <button class="btn colorBtn pink" data-key="color" data-value="pink" onclick="itemsShow();">Pink</button>
+        <button class="btn colorBtn magenta" onclick="setWish();">MyList</button>
+    </section>
+    <!-- list -->
+    <div class="wrap">
+        <section class="list">
+
+        </section>
+
+        <p class="arrow"></p>
+
+        <section class="myList">
+
+        </section>
+    </div>
+    <div class="wish">
+        <section class="wishList">
+
+
+        </section>
+    </div>
+    <button class="btn colorBtn white wishBtn" onclick="clearWishList();">비우기</button>
+    <div class="addButton">
+        <button class="btn colorBtn white save" onclick="saveTheItems();">저장</button>
+        <button class="btn colorBtn white cancel" onclick="itemCancel();">취소</button>
+    </div>
+    <div class="footer">
+        <address>refer to DreamCoding</address>
+    </div>
+
+</body>
+</html>

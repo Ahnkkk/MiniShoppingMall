@@ -1,0 +1,182 @@
+:root{
+    /* color */
+    --color-black: #3f454d;
+    --color-white: #ffffff;
+    --color-blue: #3b88c3;
+    --color-yellow: #fbbe28;
+    --color-pink: #fd7f84;
+    --color-light-gray: #dfdfdf;
+    --color-magenta: #ed81f7;
+
+    /* animation */
+    --transition-delay:300ms;
+
+    /* size */
+    --base-space: 8px;
+    --base-image-btn: 65px;
+    --base-btn:18px;
+    --base-border:10px;
+}
+body{
+    width: 200vh;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: var(--color-black);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+@keyframes motion {
+    0% {margin-top: 0px;}
+    20% {margin-top: 10px;}
+    40% {margin-top: 0px;}
+    60% {margin-top: 10px;}
+    80% {margin-top: 0px;}
+    100% {margin-top: 0px;}
+}
+.header{
+   margin-top: 20px;
+}
+.logo{
+    cursor: pointer;
+    transition: var(--transition-delay) ease;
+    margin-top: 30px;
+    animation: motion 1.3s linear 0s infinite;
+    animation-play-state: paused;
+}
+.logo:hover{
+    transform: scale(1.1);
+}
+.middle{
+    display: flex;
+    align-items: center;
+}
+.btn{
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    transition: var(--transition-delay) ease;
+    padding: calc(var(--base-space)*2.5);
+}
+.btn:hover{
+    transform: scale(1.1);
+}
+.btnImg{
+    width: var(--base-image-btn);
+    height: var(--base-image-btn);
+}
+.colorBtn{
+    font-size: var(--base-btn);
+    border-radius: var(--base-border);
+    margin: var(--base-space);
+}
+.blue{
+    background-color: var(--color-blue);
+}
+.yellow{
+    background-color: var(--color-yellow);
+}
+.pink{
+    background-color: var(--color-pink);
+}
+.magenta{
+    background-color: var(--color-magenta);
+}
+.wrap{
+    width: 70%;
+    height: 535px;
+    display: flex;
+}
+.wish{
+    width: 60%;
+    height: 535px;
+    margin-left: 680px;
+    display: none;
+}
+.list{
+    width: 45%;
+    height: 535px;
+    list-style: none;
+    overflow-y: scroll;
+    margin-left: 370px;
+}
+.myList{
+    width: 45%;
+    height: 535px;
+    list-style: none;
+    overflow-y: hidden;
+    margin-left: 50px;
+    display: none;
+}
+.wishList{
+    width: 45%;
+    height: 535px;
+    list-style: none;
+    overflow-y: hidden;
+}
+.item{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    padding: var(--base-space);
+    margin-bottom: var(--base-space);
+}
+.myItem{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    padding: var(--base-space);
+    margin-bottom: var(--base-space);
+}
+.itemPoint{
+    width: var(--base-image-btn);
+    height: var(--base-image-btn);
+    cursor: pointer;
+    transition: var(--transition-delay);
+}
+.itemPoint:hover{
+    transform: scale(1.1);
+}
+
+.myItemPoint{
+    width: var(--base-image-btn);
+    height: var(--base-image-btn);
+}
+.itemDetail{
+    font-size: var(--base-btn);
+    padding-left: calc(var(--base-space)*2);
+}
+.myItemDetail{
+    font-size: var(--base-btn);
+    padding-left: calc(var(--base-space)*2);
+}
+.arrow{
+    width: 0;
+    height: 0;
+    border-top: 30px solid transparent;
+    border-bottom: 30px solid transparent;
+    border-left: 30px solid black;
+    margin-left: 50px;
+    margin-top: 230px;
+    display: none;
+}
+.save,.cancel{
+    display: none;
+}
+.addButton{
+    margin-left: 700px;
+    display: flex;
+}
+.wishBtn{
+    display: none;
+}
+.white{
+    font-weight: bold;
+    background-color: white;
+}
+.footer{
+    margin-top: calc(var(--base-space)*5);
+}
